@@ -1,0 +1,91 @@
+/* Container for the search bar */
+.search-container {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Styling the search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  padding-right: 35px; /* Leave space for the "X" button */
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Optional: Focus effect for the search bar */
+.search-bar:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Results dropdown */
+#search-results {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1000;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: .5vh;
+  border-top: 0;
+}
+
+#search-results li {
+  padding: .5vh;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding-left: 1vh;
+}
+
+#search-results li:last-child {
+  border: none;
+}
+
+#search-results li:hover {
+  background-color: #f0f0f0; /* Optional: highlight on hover */
+}
+
+/* Clear button ("X") */
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #999; /* Light gray color for the "X" */
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  z-index: 5000;
+}
+
+.clear-btn:hover {
+  color: #333; /* Darker color when hovered */
+}
+
+/* Show the "X" button when input has text */
+.search-container input:not(:placeholder-shown) + .clear-btn {
+  display: block; /* Show the "X" when there's input */
+}
+
+/* Show the "X" when the input is focused */
+.search-container input:focus + .clear-btn {
+  display: block;
+}

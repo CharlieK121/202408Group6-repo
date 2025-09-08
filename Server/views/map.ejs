@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/map_header.ejs') %>
+</head>
+<body>
+    <div id='page-container'></div>
+        <div id="header">
+            <nav>
+                <a>Scholar Path</a>
+                <a href="/">Home</a>
+                <a href="profile">Profile</a>
+                <a href="login">Login</a>
+                <a href="logout" class="link">Logout</a>
+            </nav>
+        </div>
+
+        <div class="dd-container">
+            <div class="dd">
+              <div class="dd-header" id="classes-header">My Classes</div>
+              <ul id="selection" class="list-group">
+                <% student_info.forEach((info, index) => { %>
+                    <li 
+                        class="list-group-item <%= index === 0 ? 'active' : '' %>" 
+                        id="slot<%= index + 1 %>" 
+                        data-lat="<%= info.Latitude %>" 
+                        data-long="<%= info.Longitude %>">
+                        <%= info.Title %>
+                    </li>
+                <% }); %>
+            </ul>
+            </div>
+            <!-- Add more dropdowns here -->
+            <div class="dd">
+                <div class="dd-header" id="amenities-header">Amenities</div>
+                <ul class="list-group" id="amenity-select"></ul>
+              </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" class="search-bar" placeholder="Searching for something on campus?">
+            <button id="clear-search" class="clear-btn" aria-label="Clear Search">X</button>
+            <ul id="search-results" class="dd"></ul>
+        </div>
+    
+        <h1>Welcome, <%= username %>!</h1>
+
+        <div id="map"></div>
+        <!-- Coordinate display in the bottom-left corner -->
+        <div id="coordinates">
+            <h3>Coordinates</h3>
+            <p id="lat">Latitude: </p>
+            <p id="lng">Longitude: </p>
+        </div>
+
+        <button id = "center-user"></button>
+
+    </div>
+
+<script src="../Scripts/map1.js"></script>
+<script src="../Scripts/Amenity.js"></script>
+</body>

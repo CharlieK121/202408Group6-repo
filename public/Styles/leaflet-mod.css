@@ -1,0 +1,48 @@
+.leaflet-routing-container {
+    /* position: fixed; */
+    width: 90vw;
+    /* left: 0%; */
+    display: block;
+}
+
+.leaflet-routing-alt {
+    padding-top: 0;
+    margin-top: 0;
+    height: 5vh !important;
+    overflow: hidden;
+}
+.leaflet-routing-alt h2 {
+    visibility: collapse;
+    margin: 0;
+}
+.leaflet-routing-alt h3{
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-top: .1vw;
+    font-size: 1.25vh;
+    background-color: rgb(86, 166, 252);
+    color: white;
+    border-radius: .25vw;
+}
+
+.leaflet-routing-container, .leaflet-bar, .leaflet-control {
+    height: 6vh !important;
+}
+
+.leaflet-routing-alt tr {
+    height: 3vh;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    z-index: 100;
+}
+/* Leaflet Watermark */
+.leaflet-control-attribution{
+    height: 15px !important;
+}
+.leaflet-routing-alt table {
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+body {
+    overflow: scroll;
+}
+
+#maincont {
+    margin: 50px;
+    background-color: #212529f2 !important;
+    border-radius: 3vw;
+    padding: 3vw;
+    color: white;
+    margin-top: 0px;
+}
+
+nav {
+    position: relative !important;
+    top: 0px !important;
+}
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}

@@ -1,0 +1,7 @@
+Credentials/
+*Key.js
+node_modules
+.env
+server1.js
+package1.json
+package-lock1.json

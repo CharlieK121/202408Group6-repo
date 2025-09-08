@@ -1,0 +1,197 @@
+/* Header Navigation */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align header content vertically */
+    padding: 20px 40px;
+    background: rgba(39, 39, 39, 0.8); /* Dark background for the header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-main-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-main-logo img {
+    width: 120px; /* Adjust the width of the logo */
+    height: auto; /* Keep the logo's aspect ratio */
+    margin-right: 30px; /* Space between logo and navigation items */
+}
+
+/* Main Navigation Styles */
+.dropdown-toggle ul, 
+.header-main-login ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-toggle ul li, 
+.header-main-login ul li  {
+    list-style-type: none;
+    margin: 0 15px; /* Uniform spacing between items */
+    position: relative; /* For dropdown positioning */
+}
+
+.dropdown-toggle ul li a, 
+.header-main-login ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px; /* Uniform padding for all tabs */
+    border-radius: 5px; /* Optional: Rounded corners for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    display: inline-block; /* Ensures uniform alignment */
+}
+
+.dropdown-toggle ul li a:hover,
+.header-main-login ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+    color: white;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: rgba(39, 39, 39, 0.9);
+    min-width: 200px; /* Adjust width for proper alignment */
+    z-index: 10;
+    border-radius: 5px;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font for dropdown */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show the dropdown on hover of the parent li */
+.dropdown-toggle:hover .dropdown {
+    display: block;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 786px) {
+    .header-main {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        text-align: center;
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Automatically adjust height based on content */
+    }
+    @media (max-width: 20px) {
+        .header-main {
+            display: flex;
+            flex-direction: row; /* Keep navigation in a horizontal layout */
+            align-items: center; /* Vertically align items */
+            justify-content: space-between; /* Space out logo and navigation */
+            padding: 10px 20px; /* Compact padding for smaller screens */
+            width: 50%; /* Full width of the screen */
+            height: auto; /* Adjust height to content */
+            position: relative; /* Ensure it does not overlap content */
+            background-color: rgba(39, 39, 39, 0.8); /* Semi-transparent background for readability */
+            border-bottom: rgba(0, 123, 255, 0.1); /* Optional border for separation */
+            z-index: 1000; /* Ensure the header is above other content */
+        }
+    
+        .header-main-logo {
+            display: flex;
+            align-items: center; /* Vertically center the logo */
+        }
+    
+        .header-main-logo img {
+            width: 80px; /* Adjust logo size for smaller screens */
+            height: auto;
+        }
+    
+        .header-main-navigation {
+            display: flex;
+            flex-direction: row; /* Keep navigation in a horizontal layout */
+            gap: 15px; /* Space between navigation links */
+        }
+    
+        .header-main-navigation ul {
+            display: flex;
+            list-style: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+        }
+    
+        .header-main-navigation ul li {
+            margin: 0;
+        }
+    
+        .header-main-navigation ul li a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Default text color */
+            padding: 10px; /* Adjust padding for smaller screens */
+            font-size: 14px; /* Reduce font size for compact design */
+            transition:  0.3s;
+        }
+    
+        .header-main-navigation ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+        }
+    
+        /* Ensure content below the header is not blocked */
+        .content {
+            margin-top: 0; /* No margin needed since header height adjusts automatically */
+        }
+    }
+    
+    .header-main-logo img {
+        width: 100px; /* Smaller logo on mobile */
+        margin-bottom: 20px;
+    }
+
+    .dropdown {
+        display: block; /* Always show dropdown for mobile */
+        position: static; /* Align dropdown below parent */
+        margin-top: 10px;
+        width: 100%; /* Full-width dropdown for smaller screens */
+    }
+
+    .header-main-logo ul, 
+    .header-main-login ul {
+        display: flex;
+        flex-direction: column; /* Stack list items vertically */
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensure full width for the lists */
+    }
+
+    .header-main-logo ul li, 
+    .header-main-login ul li {
+        margin: 10px 0; /* Add vertical spacing between items */
+        text-align: center; /* Center-align list items */
+        width: 100%; /* Full width */
+    }
+
+    .header-main-logo ul li a, 
+    .header-main-login ul li a {
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit text color */
+        display: block; /* Ensure links fill their container */
+        padding: 10px; /* Add padding for better touch targets */
+    }
+}

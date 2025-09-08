@@ -1,0 +1,58 @@
+{
+  "name": "scholar_path-server",
+  "version": "1.0.0",
+  "description": "Group 6 server using NodeJs, Dev MysQL, Prod PostgresSQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon Server/server.js\" \"nodemon Server/APIserver.js\"",
+    "test": "nodemon Server/servertest.js"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "Group",
+    "6",
+    "Scholar",
+    "Path",
+    "NodeJs",
+    "MysQL",
+    "Final",
+    "Project",
+    "Server",
+    "PostgresSQL"
+  ],
+  "author": "Leonardo Granados-Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lgranad/202408Group6-repo/issues"
+  },
+  "homepage": "https://github.com/Lgranad/202408Group6-repo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "memorystore": "^1.6.7",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.4",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pg": "^8.13.1",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7"
+  }
+}

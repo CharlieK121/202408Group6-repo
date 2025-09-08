@@ -1,0 +1,45 @@
+/* Tab Navigation */
+.tab-container {
+    display: flex;
+    justify-content: space-evenly;  /* Ensures even spacing between tabs */
+    margin: 20px 0;
+    width: 100%; /* Ensures the container spans the full width */
+}
+
+/* Tab Styling */
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgba(39, 39, 39, 0.7);
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    min-width: 120px;  /* Ensures all tabs have a consistent width */
+    text-align: center;  /* Centers the text in each tab */
+    box-sizing: border-box;  /* Includes padding and border in width calculation */
+    display: flex;
+    justify-content: center;  /* Ensures the text is centered */
+    align-items: center;  /* Centers the content vertically */
+}
+
+/* Hover effect for tabs */
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hide all tab content by default */
+.tab-content {
+    display: none;
+}
+
+/* Active tab content is displayed */
+.tab-content.active {
+    display: block;
+}
+
+/* Optional: Style for active tabs to give a clear indicator */
+.tab.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Change active tab color */
+    color: #333; /* Optional: change text color for active tab */
+}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General body styling */
+body {
+    background-image: url(../Resources/Images/2.jpg);
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text */
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tab navigation styling */
+.nav-pills .nav-link {
+    padding: 15px 20px;
+    /* border-bottom: 1px solid #ddd; */
+    border-radius: 0;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 5px;
+    text-align: center; /* Center text in nav links */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: rgb(250,174,28);
+
+}
+
+/* Tab content styling */
+.tab-content {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form group elements */
+    color: white;
+}
+
+/* Form control styling */
+.form-control {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px transparent;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 640px; /* Ensure consistent width */
+    height: 42px;
+    margin: 0 auto; /* Center the text boxes */
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal !important;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left; /* Align label text to the left */
+    width: 100%;
+    max-width: 640px; /* Ensure consistent width */
+}
+
+/* Form check styling */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Button styling */
+.btn-primary {
+    border-color: #007bff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+.btn-light {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: #f8f9fa;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Image styling */
+.img-circle img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading styling */
+h1, h3 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center; /* Center headings */
+}
+
+h4, .mb-5 {
+    font-size: 3vh !important;
+    padding: 0;
+    margin: 0;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+#v-pills-tab {
+    background-color: #333333d2;
+    stroke: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#v-pills-tabContent, #password {
+    background-color: #333333d2;
+    stroke: gray 1px;
+    border: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .nav-pills .nav-link {
+        padding: 10px 15px;
+        text-align: center;
+        
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .btn-primary, .btn-light {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img-circle img {
+        height: 80px;
+        width: 80px;
+    }
+
+    h1, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        padding: 5px;
+    }
+
+    .nav-pills .nav-link {
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-primary, .btn-light {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .img-circle img {
+        height: 60px;
+        width: 60px;
+    }
+
+    h1, h3 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,74 @@
+/* General container for dropdowns */
+.dd-container {
+    display: flex;
+    flex-direction: column; /* Dropdowns stack vertically */
+    gap: 0px; /* Space between dropdowns */
+  }
+  
+  /* Each dropdown section */
+  .dd {
+    width: 100%; /* Full width by default; adjust as needed */
+    border: 1px solid rgb(27, 27, 27);;
+    border-radius: 5px;
+    background-color: #131313;
+    cursor: pointer;
+  }
+  
+  /* Header of the dropdown */
+  .dd-header {
+    padding: 10px 15px;
+    font-size: 2vh;
+    font-weight: bolder;
+    background-color: #394164;
+    border-bottom: .5px solid #615d5d;
+    border-radius: 1px;
+    color: white;
+  }
+  
+  /* Dropdown list styling (corresponding to your <ul> with id="selection") */
+  .list-group {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    transition: height 0.2s ease;
+    overflow: hidden;
+    height: 0;
+  }
+  .list-group.open {
+    display: block;
+    transition: height 0.2s ease;
+  }
+  .list-group li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .list-group li:last-child {
+    border-bottom: none;
+  }
+  
+  .list-group li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: #131313;
+  }
+  li.active:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Styling for list items (list-group-item class) */
+  .list-group-item {
+    background-color: rgb(102, 102, 102); /* Non-active items */
+    color: white; /* Text color for non-active items */
+    cursor: pointer;
+  }
+  
+  li.active {
+    background-color: rgb(86, 166, 252) !important; /* Active item background */
+    color: white; /* Text color for the active item */
+    font-weight: bold; /* Highlight active item */
+    transition: background-color 0.3s ease; /* Smooth hover/active transition */
+  }

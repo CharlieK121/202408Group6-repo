@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOLARPATH | LOGIN</title>
+    <link rel="stylesheet" href="../Styles/_base.css">
+    <link rel="stylesheet" href="../Styles/_header.css">
+    <link rel="stylesheet" href="../Styles/_dropdown.css">
+    <link rel="stylesheet" href="../Styles/_tabs.css">
+    <link rel="stylesheet" href="../Styles/_buttons.css">
+    <link rel="stylesheet" href="../Styles/_responsive.css">
+    <link rel="stylesheet" href="../Styles/_form.css">
+    <script src="../Scripts/_dropdown.js" defer></script>
+    <script src="../Scripts/_tabs.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header-main">
+        <div class="header-main-logo">
+            <img src="../Resources/Images/_scholarpathw&b.png" alt="Logo">
+        </div>
+        <div class="header-main-login">
+            <ul>
+                <li><a href="_map.html">MAP</a></li>
+                <li><a href="_profile.html">PROFILE</a></li>
+                <li class="dropdown-toggle" tabindex="0">
+                    <a href="#" aria-expanded="false">RESOURCES</a>
+                    <ul class="dropdown" aria-hidden="true">
+                        <li><a href="_studyGroup.html">MYSTUDYGROUP</a></li>
+                        <li><a href="_favorites.html">MYFAVORITES</a></li>
+                        <li><a href="_events.html">MYEVENTS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="_aboutUs.html">ABOUT US</a></li>
+                <li class="dropdown-toggle" tabindex="0">
+                    <a href="#" aria-expanded="false">SETTINGS</a>
+                    <ul class="dropdown" aria-hidden="true">
+                        <li><a href="_security.html">SECURITY</a></li>
+                        <li><a href="_password.html">PASSWORD</a></li>
+                    </ul>
+                </li>
+                <li><a href="_index.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- FormBox Class -->
+    <div class="wrapper">
+        <!-- Wrapper Class -->
+        <div class="form-box">
+            <!-- Additional Content Section -->
+            <div class="tab-pane fade" id="myEvents" role="tabpanel" aria-labelledby="myEvents-tab">
+                <h3 class="mb-4"> My Events </h3>
+                <div class="input-box">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="one">
+                                <input type="checkbox" id="register-check">
+                                <label for="register-check"> Attending!</label>
+                            </div>
+                            <div class="one">
+                                <input type="checkbox" id="register-check">
+                                <label for="register-check"> SIGN UP? </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="submit"> Update </button>
+                    <button class="submit"> Cancel </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

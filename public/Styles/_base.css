@@ -1,0 +1,26 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Universal Reset */
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply font globally */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../Resources/Images/1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}

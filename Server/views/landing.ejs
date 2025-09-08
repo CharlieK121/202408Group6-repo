@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/landing.css">
+    <%- include('./partials/LoginReg_Header.ejs') %>
+</head>
+<body>
+    
+    <div class="main-content">
+
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>SCHOLAR PATH </p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="login" class="link">Login</a></li>
+                    <li><a href="guest" class="link">Guest</a></li>
+                    <li><a href="profile" class="link">Profile</a></li>
+                    <li><a href="#" class="link">Services</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn" id="navButton">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+        <div class="card">
+            <h1>Welcome to Scholar Path</h1>
+            <p>Scholar Path is an on-campus navigation application designed to guide new students to different places.</p>
+        </div>
+
+        <div class="card">
+            <h1>About Our Service</h1>
+            <div id="description">
+                <img src="..\Resources\Images\demo-landing.png" alt="Sample Image" id="sp-img">
+                <p id="desc-p">Not a user? Contact an admin to get registered! <br><br>
+                Have an account? <br>Login <a href="login">here</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Scholar Path</p>
+    </footer>
+
+</body>
+</html>

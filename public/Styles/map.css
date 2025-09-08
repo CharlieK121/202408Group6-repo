@@ -1,0 +1,96 @@
+#page-container {
+    background-color: black;
+}
+
+#map {
+    height: 50vh;
+}
+
+/* Style for the coordinates panel in the bottom left corner */
+#coordinates {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 160px; 
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: system-ui;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Map box stays above the map content */
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#center-user {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    /* Use the PNG as the background */
+    background-image: url(../Resources/Images/center1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Set the button's dimensions to match the image */
+    width: 6vh; /* Adjust to your PNG dimensions */
+    height: 6vh; /* Adjust accordingly */
+
+    /* Remove default button styling but maintain layout */
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+    /* Ensure it's a clickable element */
+    cursor: pointer;
+
+    /* Prevent the button from disappearing */
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Style for the centered and styled button in map popups */
+.styled-button {
+    background-color: #007BFF; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth transition */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.styled-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+.styled-button:active {
+    background-color: #004085; /* Even darker on click */
+    transform: scale(0.95); /* Slight shrinking */
+}
+
+.styled-button:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.5); /* Focus ring */
+}
+/* Center the button in its container */
+.styled-button-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin-top: 10px; /* Optional spacing above the button */
+}
+
