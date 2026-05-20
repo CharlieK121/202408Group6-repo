@@ -1,7 +1,7 @@
 # Group 6
 # Scholar Path
 Scholar Path is a web based application that allows students to explore the campus map and resources.
-
+(Scholarpath is a class project that )
 # Install instructions
 Required programming language: Javascript
 Required markup language: HTML5, CSS
